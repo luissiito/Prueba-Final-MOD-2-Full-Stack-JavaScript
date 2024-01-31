@@ -1,4 +1,94 @@
 section:nth-child(n+2){
     background-color: #000 !important;
-    padding: 0 3em !important;
+    padding-top: .7em !important;
+    padding-right: 3em !important;
+    padding-bottom: 0em !important;
+    padding-left: 3em !important;
+}
+section:nth-child(n+2) h3{
+    padding-top: .7em !important;
+    padding-bottom: .7em !important;
+    text-align: center;
+}
+
+section:nth-child(n+2) div{
+    background-color: #000;  
+}
+
+section:nth-child(n+2) div .card{
+    height: 100%;
+    padding-top: .7em !important;  
+}
+section:nth-child(n+2) div .card .card-body .card-text{
+    border-bottom-left-radius: 3.5px !important; 
+    border-bottom-right-radius: 3.5px !important; 
+}
+
+#quienesSomos .card h2{
+    background-color: #06e5e5;
+    cursor: grab;
+    text-align: center;
+}
+#quienesSomos .card h2 i{
+    color: white;
+}
+#quienesSomos .card .card-body .card-text{
+    color: white;
+    padding-bottom: 1.9em !important;
+}
+
+#destacados div .card img{
+    border-top-left-radius: 3.5px !important; 
+    border-top-right-radius: 3.5px !important; 
+    height: 30%;
+}
+
+#destacados div .card .card-body{
+    background-color: #06e5e5;
+}
+
+#destacados div .card .card-body .card-text{
+    background-color: #06e5e5;
+    color: white;
+    padding: .7em !important;
+}
+
+#destacados div .card h6{
+    background-color: #06e5e5;
+    color: white;
+    padding-top: .7em !important;
+    padding-right: .7em !important;
+    padding-left: .7em !important;
+    padding-bottom: 0!important;
+    font-weight: bolder;
+}
+
+#contacto form{
+    border-top-color: #808080;
+    border-top-width: .05em;
+    border-top-style: solid;;
+    padding-top: .2em !important;
+}
+
+#contacto .form-group label{
+    color: white;
+    padding-bottom: .4em !important;;
+    padding-top: .4em !important;;
+}
+
+#contacto form .form-group input[type="text"]#txtMensaje{
+    height: 7em;
+}
+#contacto form .form-group textarea{
+    margin-bottom: .4em !important;
+}
+
+#contacto form .form-group button#btnSubmit{
+    background-color: #06e5e5 !important;
+    border-radius: .1em !important;
+    color: white;
+    padding-bottom: .2em !important;
+    padding-left: .7em !important;
+    padding-right: .7em !important;
+    padding-top: .2em !important;
 }
