@@ -1,0 +1,11 @@
+
+#quienesSomos .alert{
+    background-color: red;
+    color: white;
+    display: none;
+    font-weight: bolder;
+    padding: .5em !important;
+    position: absolute;
+    right: 2em;
+    top: 3em;
+}

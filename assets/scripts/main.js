@@ -1,5 +1,8 @@
 
+
 iniciarBootStrapTooltip();
+iniciarIconosLinksARedesSociales();
+iniciarIconosSeccionQuienesSomos();
 
 function iniciarBootStrapTooltip() {
     $(function () {
@@ -9,22 +12,6 @@ function iniciarBootStrapTooltip() {
             btnSubmit.modal()
         });
     })   
-}
-
-const linkGithub = document.getElementById('linkGithub');
-const linkLinkedin = document.getElementById('linkLinkedin');
-const linkTwitter = document.getElementById('linkTwitter');
-const linkFacebook = document.getElementById('linkFacebook');
-
-const links = [linkGithub, linkLinkedin, linkTwitter, linkFacebook]
-
-for(let l of links){
-    l.addEventListener('mouseover', function(){
-        l.children[1].classList.toggle('footerToolTip')
-    });
-    l.addEventListener('mouseout', function(){
-        l.children[1].classList.toggle('footerToolTip')
-    });
 }
 
 const btnEnviarModalFooter = document.querySelector('.modal-footer .btn-primary');

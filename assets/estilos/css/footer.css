@@ -18,7 +18,7 @@ footer div a{
 
 .footerToolTip{
     color: yellow !important;
-    border-bottom-color: gray;
+    border-bottom-color: whitesmoke;
     border-bottom-width: 0.1em;
     border-bottom-style: solid;
     display: inline-block !important;

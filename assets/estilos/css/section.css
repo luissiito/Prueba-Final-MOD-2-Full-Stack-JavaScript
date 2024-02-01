@@ -25,10 +25,16 @@ section:nth-child(n+2) div .card .card-body .card-text{
     border-bottom-right-radius: 3.5px !important; 
 }
 
+#quienesSomos{
+    position: relative;
+}
 #quienesSomos .card h2{
     background-color: #06e5e5;
     cursor: grab;
     text-align: center;
+}
+#quienesSomos .card h2.noDisponible{
+    cursor: no-drop !important;
 }
 #quienesSomos .card h2 i{
     color: white;
@@ -36,6 +42,9 @@ section:nth-child(n+2) div .card .card-body .card-text{
 #quienesSomos .card .card-body .card-text{
     color: white;
     padding-bottom: 1.9em !important;
+}
+#quienesSomos .alert.disponible{
+    display: block;
 }
 
 #destacados div .card img{

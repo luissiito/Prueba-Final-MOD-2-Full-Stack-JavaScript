@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@1,300&display=swap');
 @import './bootstrap/local/componentes/tooltip.css';
 @import './bootstrap/local/componentes/modal.css';
+@import "./alert.css";
 @import "./carrusel.css";
 @import "./section.css";
 @import "./footer.css";
