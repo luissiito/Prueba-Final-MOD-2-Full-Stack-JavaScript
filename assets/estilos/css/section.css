@@ -66,7 +66,7 @@ section:nth-child(n+2) div .card .card-body .card-text{
 
 #contacto form{
     border-top-color: #808080;
-    border-top-width: .05em;
+    border-top-width: .02em;
     border-top-style: solid;;
     padding-top: .2em !important;
 }
@@ -93,15 +93,6 @@ section:nth-child(n+2) div .card .card-body .card-text{
     padding-right: .7em !important;
     padding-top: .2em !important;
 }
-
-footer{
-    background-color: #06e5e5;
-    padding-bottom: 1em !important;
-    padding-top: 1em !important;
-}
-footer h3{
-    color: white;
-}
-footer div i{
-    color: white;
+#contacto form .form-group button#btnSubmit:hover{
+    font-weight: bolder;
 }

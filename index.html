@@ -8,8 +8,8 @@
     <title>Prueba Final Mod 2</title>
 
     <link rel="icon" type="image/x-icon" href="./assets/imagenes/iconos/ico-prueba.png">
-    <link href="./assets/estilos/css/main.css" rel="stylesheet" type="text/css" /> 
     <link rel="stylesheet" href="./assets/estilos/css/bootstrap/bootstrap.min.css" type="text/css">
+    <link href="./assets/estilos/css/main.css" rel="stylesheet" type="text/css" /> 
       
     <script src="./assets/scripts/jQuery/jQuery 3.7.1.js""></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -19,7 +19,9 @@
 </header>
 
 <body> 
+  <!-- inicio main-->
   <main class="bg-dark">
+    <!--inicio sección carruselDeImagenes-->
     <section id="carruselDeImagenes">
       <!-- inicio carrusel de Bootstrap-->
       <div id="carrusel" class="carousel slide" data-ride="carousel">
@@ -43,9 +45,10 @@
       </div>
       <!-- fin carrusel de Bootstrap-->
     </section>
+    <!--fin sección carruselDeImagenes-->
   
     <!--inicio sección quienesSomos-->
-    <section class="px-4" id="quienesSomos">
+    <section class="d-none d-sm-block px-4" id="quienesSomos">
       <h3 class="text-light">¿QUIÉNES SOMOS?</h3>
       <div class="d-flex gap-3 justify-content-between">
         <!--inicio card Bootstrap-->
@@ -98,7 +101,7 @@
     <section id="contacto">
       <h3 class="text-light">CONTACTO</h3>
       <!--inicio formulario Bootstrap-->
-      <form>
+      <form onsubmit="return false;">
         <div class="form-group">
           <label for="txtNombre">Nombre</label>
           <input type="text" class="form-control" id="txtNombre">
@@ -112,22 +115,67 @@
           <textarea class="w-100" rows="5"></textarea>
         </div>
         <div class="form-group">
-          <button id="btnSubmit" type="submit" class="btn">Enviar</button>
+          <button id="btnSubmit" type="submit" class="btn" data-toggle="modal" data-target="#modalBootstrap"
+            title="Contáctate con nosotros">Enviar</button>
         </div>
-      </form>
-      <!--fin formulario Bootstrap-->
-    </section>
+        </form>
+        <!--fin formulario Bootstrap-->
+
+        <!-- inicio ModalBootstrap -->
+        <div class="modal" id="modalBootstrap" tabindex="-1" role="dialog" aria-labelledby="modalBootstrap" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Confirmación del formulario</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Hemos tomado tus datos ingresados. Los quieres enviar ?</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fin ModalBootstrap -->
+        </section>
     <!--fin sección contacto-->  
   </main>
+  <!-- fin main-->
+
+  <!-- inicio footer-->
   <footer class="row">
     <h3 class="col-6 text-center" >VIAJES CHILE</h3>
     <div class="col-6 invert-color text-center">
-      <a href="https://github.com/" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-      <a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="https://github.com/" id="linkGithub" target="_blank" data-toggle="tooltip" data-bs-placement="top" title="Github">
+        <i class="fa-brands fa-square-github"></i>
+        <!--inicio footerTooltip-->
+      <div class="d-none">Github</div>
+      </a>      
+      <a href="https://linkedin.com/" id="linkLinkedin"  target="_blank" data-toggle="tooltip" data-bs-placement="top" title="Linkedin">
+        <i class="fa-brands fa-linkedin"></i>
+         <!--inicio footerTooltip-->
+      <div class="d-none">Linkedin</div>
+      </a>     
+      <a href="https://twitter.com/" id="linkTwitter"  target="_blank" data-toggle="tooltip" data-bs-placement="top" title="Twitter">
+        <i class="fa-brands fa-x-twitter"></i>
+          <!--inicio footerTooltip-->
+      <div class="d-none">Twitter</div>
+      </a>    
+      <a href="https://facebook.com/" id="linkFacebook"  target="_blank" data-toggle="tooltip" data-bs-placement="top" title="Facebook">
+        <i class="fa-brands fa-square-facebook"></i>
+          <!--inicio footerTooltip-->
+      <div class="d-none">Facebook</div>
+      </a>    
     </div>
   </footer>
+  <!-- fin footer-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script src="./assets/scripts/main.js"></script>
 </body>
 </html>
