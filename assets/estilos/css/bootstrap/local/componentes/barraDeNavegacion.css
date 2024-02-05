@@ -1,0 +1,32 @@
+
+.navbar {
+    background-color: rgba(0,0,0,.005) !important;
+    padding-bottom: .5em !important;
+    position: fixed !important;
+    top: 0 !important;
+    width: 100vw;
+    z-index: 5;
+}
+.navbar div.logoViajesChile{
+    display: flex;
+    justify-content: center;
+}
+.navbar .logoViajesChile img { 
+    cursor: pointer;
+    width: 1.8em;
+}
+.navbar a {
+    color: whitesmoke !important;
+    cursor: pointer !important;
+    font-size: 1.25em;
+    margin-left: 0.25em !important;
+    margin-right: 0.25em !important;
+    padding-bottom: .1em !important;
+}
+
+.navbar div ul li a:hover {
+    border-bottom-color: lightblue;
+    border-bottom-style: solid;
+    border-bottom-width: .1em;    
+    font-size: 1.18em;
+}

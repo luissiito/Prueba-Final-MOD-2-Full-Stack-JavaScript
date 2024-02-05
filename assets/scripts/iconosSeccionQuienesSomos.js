@@ -6,20 +6,27 @@ function iniciarIconosSeccionQuienesSomos(){
         e.addEventListener('click', ()=>{
             e.classList.add('noDisponible');
             if(e.children[0].classList.contains('fa-plane')){
-                alertBootstrap.classList.add('bg-primary')
+                alertBootstrap.classList.add('bg-primary');
+                alertBootstrap.classList.remove('bg-success');
+
             }
-            if(e.children[0].classList.contains('fa-triangle-exclamation')){
-                alertBootstrap.classList.add('bg-success')
+            else if(e.children[0].classList.contains('fa-triangle-exclamation')){
+                alertBootstrap.classList.add('bg-success');
+                alertBootstrap.classList.remove('bg-primary');
+
             }
-            alertBootstrap.classList.add('disponible')
-            setInterval(()=>{
-                alertBootstrap.classList.remove('disponible')
-                alertBootstrap.classList.remove('bg-primary')
-                alertBootstrap.classList.remove('bg-success')
-            },2500);
+            else{
+                alertBootstrap.classList.add('alert-primary');                
+                alertBootstrap.classList.remove('bg-primary');
+                alertBootstrap.classList.remove('bg-success');
+            }
+            
+            alertBootstrap.classList.add('disponible');
         });
+
         e.addEventListener('mouseout', ()=>{
-            e.classList.remove('noDisponible')
+            alertBootstrap.classList.remove('disponible')
+            alertBootstrap.classList.add('noDisponible')
         });
     });
 }

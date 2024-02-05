@@ -5,17 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Luis Fernando González">
     <meta name="description" content="Prueba Final MOD2">
-    <title>Prueba Final Mod 2</title>
 
+    <title>Prueba Final Mod 2</title>
+    <!--links CSS-->
     <link rel="icon" type="image/x-icon" href="./assets/imagenes/iconos/ico-prueba.png">
     <link rel="stylesheet" href="./assets/estilos/css/bootstrap/bootstrap.min.css" type="text/css">
     <link href="./assets/estilos/css/main.css" rel="stylesheet" type="text/css" /> 
-      
+    <!--links Scripts-->
     <script src="./assets/scripts/jQuery/jQuery 3.7.1.js""></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/fe1956f1e0.js" crossorigin="anonymous"></script>
   </head>
 <header>
+  <!--inicio navbar-->
+  <nav class="d-flex navbar navbar-expand-md navbar-light bg-light navbar-fixed-top" id="barraDeNavegacion">
+    <div class="col-6 logoViajesChile text-center">
+      <img src="./assets/imagenes/viajes.svg" alt="">  
+      <a class="navbar-brand">Viajes Chile</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barraDeNavegacion"
+        aria-controls="barraDeNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="col-6 collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#carruselDeImagenes">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#quienesSomos">Quiénes Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#destacados">Destacados</a>
+        </li>
+        <li class="nav-item"">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+   <!--fin navbar-->
 </header>
 
 <body> 
@@ -176,10 +205,15 @@
     </div>
   </footer>
   <!-- fin footer-->
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-   <script src="./assets/scripts/iconosLinksARedesSociales.js"></script>
+   <script src="./assets/scripts/navBar.js"></script>
    <script src="./assets/scripts/iconosSeccionQuienesSomos.js"></script>
+   <script src="./assets/scripts/iconosLinksARedesSociales.js"></script>
+   <script src="./assets/scripts/modalContacto.js"></script>
+   <script src="./assets/scripts/footer.js"></script>
+   <script src="./assets/scripts/bootstrapTooltip.js"></script>
    <script src="./assets/scripts/main.js"></script>
 </body>
 </html>
