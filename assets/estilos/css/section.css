@@ -2,27 +2,45 @@
 section:nth-child(n+2){
     background-color: #000 !important;
     padding-top: .7em !important;
-    padding-right: 3em !important;
+    padding-right: 4em !important;
     padding-bottom: 2em !important;
-    padding-left: 3em !important;
+    padding-left: 4em !important;
 }
 section:nth-child(n+2) h3{
     padding-top: .7em !important;
     padding-bottom: .7em !important;
     text-align: center;
 }
-
 section:nth-child(n+2) div{
     background-color: #000;  
 }
-
 section:nth-child(n+2) div .card{
     height: 100%;
-    padding-top: .7em !important;  
+    margin-top: .5em !important;
+    padding-left: .5em !important;
+    padding-right: .5em !important;
+}
+section:nth-child(n+2) div .card img{
+    height: 8em !important;
 }
 section:nth-child(n+2) div .card .card-body .card-text{
     border-bottom-left-radius: 3.5px !important; 
     border-bottom-right-radius: 3.5px !important; 
+}
+section:nth-child(3) div .card:hover{
+    background-color:  paleturquoise;
+    border: 0.01em solid darkgray; 
+}
+section:nth-child(3) div .card img{
+    border-left: 0.01em solid gray !important;
+    border-right: 0.01em solid gray !important;
+    border-top: 0.01em solid gray !important;
+}
+section:nth-child(3) div .card .card-body{
+    
+    border-left: 0.01em solid gray !important;
+    border-right: 0.01em solid gray !important;
+    border-bottom: 0.01em solid gray !important; 
 }
 
 #quienesSomos{
@@ -50,7 +68,6 @@ section:nth-child(n+2) div .card .card-body .card-text{
 #destacados div .card img{
     border-top-left-radius: 3.5px !important; 
     border-top-right-radius: 3.5px !important; 
-    height: 30%;
 }
 
 #destacados div .card .card-body{
@@ -61,6 +78,9 @@ section:nth-child(n+2) div .card .card-body .card-text{
     background-color: #06e5e5;
     color: white;
     padding: .7em !important;
+}
+#destacados div .card .card-body .card-text:first-child{
+    padding-bottom: 0 !important;
 }
 
 #destacados div .card h6{
@@ -104,4 +124,45 @@ section:nth-child(n+2) div .card .card-body .card-text{
 }
 #contacto form .form-group button#btnSubmit:hover{
     font-weight: bolder;
+}
+
+@media (max-width: 600px) {
+    section:nth-child(n+2) {
+        padding: 1em !important;
+    }
+
+    section:nth-child(n+2) div .card {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+@media (max-width: 765px) {
+    #quienesSomos .card h2:first-child{
+        display: block !important;
+    }
+}
+@media (max-width: 745px) {
+    section:nth-child(3) div .card:nth-child(3) p.card-text {
+        height: auto !important;
+    }
+}
+@media (min-width: 911px) {
+    section:nth-child(3) div .card:nth-child(3) p.card-text {
+        height: 8.7em !important;
+    }
+}
+@media (min-width: 924px) {
+    section:nth-child(3) div .card:nth-child(3) p.card-text {
+        height: 7.4em !important;
+    }
+}
+@media (min-width: 946px) {
+    section:nth-child(3) div .card:nth-child(3) p.card-text {
+        height: 7.4em !important;
+    }
+}
+@media (min-width: 990px) {
+    section:nth-child(3) div .card:nth-child(3) p.card-text {
+        height: auto !important;
+    }
 }

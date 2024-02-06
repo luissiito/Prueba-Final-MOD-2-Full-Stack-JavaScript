@@ -13,3 +13,8 @@
     padding: 0 !important;
     font-family: 'Spectral', sans-serif, Arial;
 }
+
+htm{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5em;
+}
