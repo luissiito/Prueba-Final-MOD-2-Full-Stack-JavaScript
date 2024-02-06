@@ -33,6 +33,19 @@ Fuentes utilizadas:
  
  Google Fonts. En particular font-family: Spectral.
 
+Iconos Uilizados:
+ FontAwesome:
+  Seccion Quienes Somos
+   fa-plane
+   fa-triangle-exclamation
+   fa-staff-snake
+
+  Footer
+   fa-square-github
+   fa-linkedin
+   fa-x-twitter
+   fa-square-facebook
+
 Funcionalidad con JavaScript:
 
  Componentes Bootstrap y Jquery
