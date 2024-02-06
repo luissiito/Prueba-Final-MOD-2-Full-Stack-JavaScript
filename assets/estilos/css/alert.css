@@ -1,5 +1,5 @@
 
-#quienesSomos .alert{
+#quienesSomos div div .alert{
     background-color: red;
     color: white;
     display: none;
@@ -8,4 +8,7 @@
     position: absolute;
     right: 2em;
     top: 3em;
+}
+#quienesSomos div div:nth-child(2) .alert{
+    top: 7.5em;
 }
