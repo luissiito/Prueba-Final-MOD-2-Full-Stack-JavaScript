@@ -4,6 +4,7 @@ function iniciarIconosSeccionQuienesSomos(){
     const alertBootstrapSeccionUno = document.querySelector('#quienesSomos div div:nth-child(1) .alert');
     const alertBootstrapSeccionDos = document.querySelector('#quienesSomos div div:nth-child(2) .alert');
     const alertBootstrapSeccionTres = document.querySelector('#quienesSomos div div:nth-child(3) .alert');
+    
     iconos.forEach((e) =>{
         e.addEventListener('click', ()=>{
             e.classList.add('noDisponible');

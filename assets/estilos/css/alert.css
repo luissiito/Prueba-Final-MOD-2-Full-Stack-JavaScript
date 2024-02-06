@@ -1,14 +1,63 @@
+#quienesSomos div div .alert {
+  background-color: red;
+  color: white;
+  display: none;
+  font-weight: bolder;
+  padding: 0.5em !important;
+  position: absolute;
+  right: 2em;
+  top: 3em;
+}
+#quienesSomos div div:nth-child(2) .alert {
+  top: auto;
+  bottom: 3em;
+}
 
-#quienesSomos div div .alert{
+@media (max-width: 663px) {
+  #quienesSomos div div:nth-child(2) .alert:after {
+    bottom: 4em;
+  }
+}
+@media (max-width: 767px) {
+  #quienesSomos div div .alert {
+    visibility: hidden;
+  }
+  #quienesSomos div div .alert:after {
     background-color: red;
+    content: "No disponible por el momento";
     color: white;
-    display: none;
     font-weight: bolder;
-    padding: .5em !important;
+    padding: 0.4em !important;
     position: absolute;
     right: 2em;
-    top: 3em;
+    visibility: visible;
+  }
+  #quienesSomos div div:nth-child(1) .alert:after {
+    background-color: blueviolet;
+  }
+  #quienesSomos div div:nth-child(2) .alert:after {
+    background-color: #604848;
+    bottom: 2.9em;
+  }
 }
-#quienesSomos div div:nth-child(2) .alert{
-    top: 7.5em;
+@media (max-width: 880px) {
+  #quienesSomos div div .alert {
+    visibility: hidden;
+  }
+  #quienesSomos div div .alert:after {
+    background-color: red;
+    content: "No disponible por el momento";
+    color: white;
+    font-weight: bolder;
+    padding: 0.4em !important;
+    position: absolute;
+    visibility: visible;
+    top: -0.5em;
+  }
+  #quienesSomos div div:nth-child(1) .alert:after {
+      background-color: #0d6efd;
+  }
+  #quienesSomos div div:nth-child(2) .alert:after {
+      background-color: #198754;
+  }
 }
