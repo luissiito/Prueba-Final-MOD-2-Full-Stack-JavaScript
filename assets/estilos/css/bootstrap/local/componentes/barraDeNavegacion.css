@@ -9,7 +9,8 @@
 }
 .navbar div.logoViajesChile{
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    padding-left: 5em !important;
 }
 .navbar .logoViajesChile img { 
     cursor: pointer;
