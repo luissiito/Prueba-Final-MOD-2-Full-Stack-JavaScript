@@ -16,6 +16,11 @@
     cursor: pointer;
     width: 1.8em;
 }
+.navbar div button {
+   background-color: white;
+   right: 0;
+   position: absolute;
+}
 .navbar a {
     color: whitesmoke !important;
     cursor: pointer !important;
@@ -30,4 +35,10 @@
     border-bottom-style: solid;
     border-bottom-width: .1em;    
     font-size: 1.18em;
+}
+
+@media (max-width:766px){
+    .navbar div ul li a:hover {
+        background-color: orangered;
+     }
 }
