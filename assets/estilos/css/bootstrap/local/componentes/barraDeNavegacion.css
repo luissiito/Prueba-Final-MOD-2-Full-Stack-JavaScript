@@ -38,6 +38,9 @@
 }
 
 @media (max-width:766px){
+    .navbar div ul li:nth-child(2) {
+        display: none !important;
+    }
     .navbar div ul li a:hover {
         background-color: orangered;
      }
