@@ -27,42 +27,38 @@ Componentes de Bootstrap utilizados:
 
  Css Utilizado:
 
-  Mayormente compuesto por classes de Bootstrap y en menor cantidad por archivos.css nativos.
+ * Mayormente compuesto por classes de Bootstrap y en menor cantidad por archivos.css nativos.
 
 Fuentes utilizadas:
  
- Google Fonts. En particular font-family: Spectral.
+ * Google Fonts. En particular font-family: Spectral.
 
 Iconos Uilizados:
- FontAwesome:
-  Seccion Quienes Somos
-   fa-plane
-   fa-triangle-exclamation
-   fa-staff-snake
+* FontAwesome:
+  * Seccion Quienes Somos
+   * fa-plane
+   * fa-triangle-exclamation
+   * fa-staff-snake
 
-  Footer
-   fa-square-github
-   fa-linkedin
-   fa-x-twitter
-   fa-square-facebook
+  * Footer
+   * fa-square-github
+   * fa-linkedin
+   * fa-x-twitter
+   * fa-square-facebook
 
 Funcionalidad con JavaScript:
 
- Componentes Bootstrap y Jquery
+ * Componentes Bootstrap y Jquery
 
-  Carousel
-  Alert
-  Modal
-  Tooltip
+  * Carousel
+  * Alert
+  * Modal
+  * Tooltip
 
  Componentes Nativos:
 
-  TooltipFooter
-  Alert
+  * TooltipFooter
+  * Alert
 
 
 Link a la página: https://luissiito.github.io/PruebaFinalModulo2ViajesChile/
-
-
-
-  Autor: Luis González
