@@ -3,6 +3,7 @@ let urlDinamica = window.location.protocol + "//" + window.location.host + windo
 
 añadirEventoClickAlLogoNavBarSvg();
 añadirEventoClickAlLogoNavBar();
+
 function añadirEventoClickAlLogoNavBarSvg(){
     document.querySelector('nav .logoViajesChile img').addEventListener('click', () =>{
         window.location.href = urlDinamica;

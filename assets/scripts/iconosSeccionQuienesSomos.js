@@ -6,30 +6,26 @@ function iniciarIconosSeccionQuienesSomos(){
     const alertBootstrapSeccionTres = document.querySelector('#quienesSomos div div:nth-child(3) .alert');
     
     iconos.forEach((e) =>{
-        e.addEventListener('click', ()=>{
+        e.addEventListener('click', () =>{
             e.classList.add('noDisponible');
             if(e.children[0].classList.contains('fa-plane')){
                 alertBootstrapSeccionUno.classList.add('bg-primary');
                 alertBootstrapSeccionUno.classList.remove('bg-success');
                 alertBootstrapSeccionUno.classList.add('disponible');
-
             }
             else if(e.children[0].classList.contains('fa-triangle-exclamation')){
                 alertBootstrapSeccionDos.classList.add('bg-success');
                 alertBootstrapSeccionDos.classList.remove('bg-primary');
                 alertBootstrapSeccionDos.classList.add('disponible');
-
             }
             else{
                 alertBootstrapSeccionUno.classList.add('alert-primary');                
                 alertBootstrapSeccionUno.classList.remove('bg-primary');
                 alertBootstrapSeccionUno.classList.remove('bg-success');
                 alertBootstrapSeccionTres.classList.add('disponible');
-            }
-            
+            }            
         });
-
-        e.addEventListener('mouseout', ()=>{
+        e.addEventListener('mouseout', () =>{
             alertBootstrapSeccionUno.classList.remove('disponible')
             alertBootstrapSeccionUno.classList.add('noDisponible')
             alertBootstrapSeccionDos.classList.remove('disponible')
