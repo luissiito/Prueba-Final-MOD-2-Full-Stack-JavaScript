@@ -36,15 +36,15 @@ Fuentes utilizadas:
 Iconos Uilizados:
 * FontAwesome:
   * Seccion Quienes Somos
-   * fa-plane
-   * fa-triangle-exclamation
-   * fa-staff-snake
+    * fa-plane
+    * fa-triangle-exclamation
+    * fa-staff-snake
 
   * Footer
-   * fa-square-github
-   * fa-linkedin
-   * fa-x-twitter
-   * fa-square-facebook
+    * fa-square-github
+    * fa-linkedin
+    * fa-x-twitter
+    * fa-square-facebook
 
 Funcionalidad con JavaScript:
 
