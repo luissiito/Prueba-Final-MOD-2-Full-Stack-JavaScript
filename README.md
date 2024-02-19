@@ -50,15 +50,15 @@ Funcionalidad con JavaScript:
 
  * Componentes Bootstrap y Jquery
 
-  * Carousel
-  * Alert
-  * Modal
-  * Tooltip
+   * Carousel
+   * Alert
+   * Modal
+   * Tooltip
 
  Componentes Nativos:
 
-  * TooltipFooter
-  * Alert
+   * TooltipFooter
+   * Alert
 
 
 Link a la página: https://luissiito.github.io/PruebaFinalModulo2ViajesChile/
